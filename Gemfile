@@ -17,6 +17,7 @@ gem 'html5-rails'
 gem 'friendly_id', '~>4.0'
 gem 'rdf'
 
+gem 'formtastic'
 
 # Gems used only for assets and not required
 # in production environments by default.

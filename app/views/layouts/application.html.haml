@@ -9,10 +9,11 @@
 
     #main{ :role => "main" }
       #mainSub
-        = render "flashes"
-        = yield
+        %div
+          =render "flashes"
+        =yield
 
-    = render "footer"
+    =render "footer"
 
     -# Javascript at the bottom for fast page loading
     = render "javascripts"
