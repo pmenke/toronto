@@ -1,0 +1,7 @@
+%h1 hello world
+
+-collection.each do |item|
+  %p
+    %strong=item.label
+    %br/
+    =link_to category_url(item), category_url(item)

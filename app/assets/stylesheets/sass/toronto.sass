@@ -1,0 +1,63 @@
+$FONTFAMILY: "Helvetica Neue", Helvetica, Arial, sansserif
+$HEADINGCOLOR: #0088ff
+$LINKCOLOR: #449900
+
+body
+  font-family: $FONTFAMILY
+  background-color: #d8d8d8
+
+#main, #header, #footer
+  margin:
+    left: auto
+    right: auto
+  width: 800px
+
+#main
+  border:
+    width: 1px
+    style: solid
+    color: #a0a0a0
+  background-color: #ffffff
+
+#mainSub
+  padding: 1em
+  
+
+h1, h2, h3, h4
+  color: 0.5*$HEADINGCOLOR+0.1*#fff
+
+h1
+  border-bottom: 4px solid 0.3*$HEADINGCOLOR+0.7*#fff
+  
+h2
+  border-bottom: 3px solid #c8c8c8
+
+h3
+  border-bottom: 2px dotted #c8c8c8
+
+#header
+  h1
+    border-bottom: 0px
+
+p
+  margin-top: 0px
+  margin-bottom: 0.5em
+   
+label
+  color: 0.4*$HEADINGCOLOR+0.3*#fff
+  font-weight: bold
+  padding-right: 0.5em
+  
+a
+  color: $LINKCOLOR
+
+  &:visited
+    color: 0.5*$LINKCOLOR+0.25*#808080
+
+.light
+  font-weight: 300
+  
+pre.example
+  border: 1px dashed $HEADINGCOLOR
+  background-color: 0.2*$HEADINGCOLOR+0.8*#fff
+  padding: 1em

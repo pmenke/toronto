@@ -1,0 +1,38 @@
+%h1 Property: #{resource.label}
+
+
+%p
+  %label Identifier:
+  #{resource.identifier}
+%p
+  %label Name:
+  #{resource.label}
+%p
+  %label URI:
+  %code=property_url(resource)
+-#%p
+-#  %label Superclasses:
+-#  -resource.super_classes.each do |c|
+-#    =link_to c.label, category_path(c)
+-#%p
+-#  %label Subclasses:
+-#  -resource.sub_classes.each do |c|
+-#    =link_to c.label, category_path(c)
+    
+    
+%h2 Domain Specifications
+
+%p For this property, the following categories have been declared as domains:
+%ul
+  -resource.domain_specifications.each do |spec|
+    %li
+      =link_to spec.category.label, spec.category
+      -#=raw("&rarr;")
+      -#=spec.property.range_specifications.collect{ |r| r.category.label }.join(", ")
+      
+%h2 Range Specifications
+%p For this property, the following categories have been declared as ranges:
+%ul
+  -resource.range_specifications.each do |spec|
+    %li
+      =link_to spec.category.label, spec.category

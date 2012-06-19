@@ -1,0 +1,34 @@
+ontology:
+  id: 2
+  label: Éorath Ontology
+  identifier: eorath
+  comment:
+    language: de
+    text: |
+      Diese Ontologie soll alle Klassen und Konzepte des Fantasy-Browserspiels EpicQuest beschreiben.
+  categories:
+    - identifier: continent
+      label: Continent
+      comment:
+        language: de
+        text: |
+          Ein Kontinent in der Spielwelt, typischerweise bestehend aus einer großen, zusammenhängenden Landmasse.
+    - identifier: region
+      label: Region
+      comment:
+        language: de
+        text: |
+          Eine Region
+    - identifier: place
+      label: Place
+      comment:
+        language: de
+        text: |
+          Ein Ort innerhalb einer Region,
+          der einigermaßen genau mit einem Koordinatenpaar lokalisiert werden kann,
+          beispielsweise eine Stadt, ein Lager oder ein einzeln stehendes Gebäude.
+  properties:
+    - identifier: x_position
+      label: X Position
+      domains:
+        - place

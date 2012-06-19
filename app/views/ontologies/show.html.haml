@@ -1,0 +1,6 @@
+%h1 Ontology: #{resource.label}
+
+-resource.categories.each do |cat|
+  %p=link_to cat.label, cat
+
+%p=resource.properties.size

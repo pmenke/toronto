@@ -1,0 +1,7 @@
+%h1 Properties
+
+-collection.each do |item|
+  %p
+    %strong=item.label
+    %br/
+    =link_to property_url(item), property_url(item)
